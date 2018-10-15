@@ -12,6 +12,7 @@ antigen bundle docker
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-antigen theme robbyrussell
+#antigen theme robbyrussell
+antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 
 antigen apply
