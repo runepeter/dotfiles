@@ -1,6 +1,6 @@
 [user]
 	email = runepeter@fiken.no
-	name = Rune Peter Bjørnstad
+	name = Runaldo Rupert Bjørnstad
 
 [alias]
 	co = checkout
@@ -16,6 +16,7 @@
 	cm = commit -m
 	aacm = !git add -A . && git commit -m
 	cp = cherry-pick
+	up = update
 	amend = commit --amend -m
 	dev = !git checkout dev && git pull origin dev
 	staging = !git checkout staging && git pull origin staging
@@ -41,3 +42,5 @@ la = "!git config -l | grep alias | cut -c 7-"
 	tree = log --graph --decorate --pretty=oneline --abbrev-commit
 [credential]
 	helper = cache --timeout=3600
+[core]
+	autocrlf = input
