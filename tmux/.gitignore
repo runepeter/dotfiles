@@ -1,0 +1,5 @@
+.agent-fallout.json
+*.bak
+*.log
+plugins/
+.superpowers/
