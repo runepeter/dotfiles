@@ -16,6 +16,12 @@ export VISUAL=$EDITOR
 
 source $DOTFILES/.antigen/antigen.zsh
 
+# Uten `antigen use oh-my-zsh` settes ikke ZSH_CACHE_DIR, og docker-pluginen skriver completion til
+# /completions og feiler ved oppstart. Samme mappe som oh-my-zsh bruker
+ZSH_CACHE_DIR=${XDG_CACHE_HOME:-$HOME/.cache}/oh-my-zsh
+[[ -d $ZSH_CACHE_DIR/completions ]] || mkdir -p $ZSH_CACHE_DIR/completions
+fpath=($ZSH_CACHE_DIR/completions $fpath)
+
 # Bundle from default repo:
 antigen bundle git
 
