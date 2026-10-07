@@ -1,6 +1,11 @@
 [user]
 	email = runepeter@fiken.no
 	name = Runaldo Rupert Bjørnstad
+# user.signingkey er per maskin (1Password på Mac-en, nøkkelfil på Linux), i ~/.gitconfig
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
 
 [alias]
 	co = checkout
@@ -44,3 +49,26 @@ la = "!git config -l | grep alias | cut -c 7-"
 	helper = cache --timeout=3600
 [core]
 	autocrlf = input
+	excludesFile = ~/workspace/runepeter/dotfiles/gitignore_global
+	pager = delta
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+[merge]
+	conflictstyle = zdiff3
+
+# Absolutte stier: en relativ include løses mot ~/.gitconfig, som på donnie er en lenke hit
+[includeIf "hasconfig:remote.*.url:https://github.com/runepeter/**"]
+	path = ~/workspace/runepeter/dotfiles/.gitconfig-personal
+[includeIf "hasconfig:remote.*.url:git@github.com:runepeter/**"]
+	path = ~/workspace/runepeter/dotfiles/.gitconfig-personal
+[gpg "ssh"]
+	allowedSignersFile = ~/workspace/runepeter/dotfiles/allowed_signers
