@@ -3,5 +3,7 @@
 runepeter@fiken.no,runepeter@gmail.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHPs7LrneYjF/u6yXBz74ffVj2lK2mxK/i7t2BwIWado
 # Agent commit signing (macOS)
 runepeter@fiken.no,runepeter@gmail.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL77rNbwrz+OfO+eTH7bdLjNC6hXX9ive/f4Pf95MjGZ
-# donnie, olga og svetlana (~/.ssh/id_ed25519_signing)
-runepeter@fiken.no,runepeter@gmail.com namespaces="git" ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN0tdm/gQ35pRWgVaj9MT1d/5hPIKWH5uXjN1RGNuACj
+# olga (~/.ssh/id_ed25519_signing)
+runepeter@fiken.no,runepeter@gmail.com namespaces="git" ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICFu5149Xaxt3GM8dEaBwzZCfGBlki/qEBhG4D+5JQ3T
+# svetlana (~/.ssh/id_ed25519_signing)
+runepeter@fiken.no,runepeter@gmail.com namespaces="git" ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICQXmvWPB4CfvAEo7Qh0iQYN4w77dSdtsNmEIvn+cBCj
